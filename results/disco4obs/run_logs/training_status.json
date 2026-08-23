@@ -1,0 +1,47 @@
+{
+    "Disco": {
+        "checkpoints": [
+            {
+                "steps": 499984,
+                "file_path": "results\\disco4obs\\Disco\\Disco-499984.onnx",
+                "reward": -0.23579994423521888,
+                "creation_time": 1749531812.38549,
+                "auxillary_file_paths": [
+                    "results\\disco4obs\\Disco\\Disco-499984.pt"
+                ]
+            },
+            {
+                "steps": 999969,
+                "file_path": "results\\disco4obs\\Disco\\Disco-999969.onnx",
+                "reward": 0.6163125317543745,
+                "creation_time": 1749532201.8641217,
+                "auxillary_file_paths": [
+                    "results\\disco4obs\\Disco\\Disco-999969.pt"
+                ]
+            },
+            {
+                "steps": 1000011,
+                "file_path": "results\\disco4obs\\Disco\\Disco-1000011.onnx",
+                "reward": 0.619576500619159,
+                "creation_time": 1749532201.9120522,
+                "auxillary_file_paths": [
+                    "results\\disco4obs\\Disco\\Disco-1000011.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000011,
+            "file_path": "results\\disco4obs\\Disco.onnx",
+            "reward": 0.619576500619159,
+            "creation_time": 1749532201.9120522,
+            "auxillary_file_paths": [
+                "results\\disco4obs\\Disco\\Disco-1000011.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

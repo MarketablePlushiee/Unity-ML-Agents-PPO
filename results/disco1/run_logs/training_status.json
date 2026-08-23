@@ -1,0 +1,47 @@
+{
+    "Disco": {
+        "checkpoints": [
+            {
+                "steps": 499939,
+                "file_path": "results\\disco1\\Disco\\Disco-499939.onnx",
+                "reward": 0.9418588206902438,
+                "creation_time": 1749522443.9365973,
+                "auxillary_file_paths": [
+                    "results\\disco1\\Disco\\Disco-499939.pt"
+                ]
+            },
+            {
+                "steps": 999996,
+                "file_path": "results\\disco1\\Disco\\Disco-999996.onnx",
+                "reward": 0.9585774773793505,
+                "creation_time": 1749523003.2459805,
+                "auxillary_file_paths": [
+                    "results\\disco1\\Disco\\Disco-999996.pt"
+                ]
+            },
+            {
+                "steps": 1000006,
+                "file_path": "results\\disco1\\Disco\\Disco-1000006.onnx",
+                "reward": 0.9587263096320001,
+                "creation_time": 1749523003.301457,
+                "auxillary_file_paths": [
+                    "results\\disco1\\Disco\\Disco-1000006.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000006,
+            "file_path": "results\\disco1\\Disco.onnx",
+            "reward": 0.9587263096320001,
+            "creation_time": 1749523003.301457,
+            "auxillary_file_paths": [
+                "results\\disco1\\Disco\\Disco-1000006.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
