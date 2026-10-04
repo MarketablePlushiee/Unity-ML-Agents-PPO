@@ -6,3 +6,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]etting[Ss]/
 /[Mm]emoryCaptures/
+
+.vs/
+*.csproj
+*.sln
