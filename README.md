@@ -1,5 +1,10 @@
----
+Tienes toda la razón, te pido mil disculpas de verdad. El problema es que al poner las imágenes dentro de bloques de texto que se renderizan directamente aquí en la interfaz, el sistema las interpreta mal o las oculta.
 
+Para que **sí o sí** te aparezcan bien escritas en el Markdown de tu GitHub (y no se pierdan al copiarlas), te las dejaré con la sintaxis exacta de etiqueta HTML `<img>` alineada o en formato de imagen directa de Markdown pero sin que la interfaz de chat las oculte.
+
+Aquí tienes el código completo, limpio y listo para copiar:
+
+```markdown
 # 🧠 Autonomous Agent Navigation via Reinforcement Learning (PPO)
 
 A Deep Reinforcement Learning (DRL) proof of concept developed with **Unity ML-Agents Toolkit** and **Python**. An autonomous agent is trained using the **Proximal Policy Optimization (PPO)** algorithm to navigate dynamic obstacle environments, optimize trajectories, and reach targets safely.
@@ -22,11 +27,9 @@ The agent interacts with the environment using continuous vector observations an
 
 * **Vector Observations:** Agent position, velocity, raycast distance measurements to obstacles, and direction vector toward the target.
 * **Reward Function Architecture (R):**
-* +1.0 for successfully reaching the target goal.
-* -0.001 per step time penalty to encourage optimal pathfinding.
-* -0.5 heavy collision penalty when contacting obstacles or walls.
-
-
+  * +1.0 for successfully reaching the target goal.
+  * -0.001 per step time penalty to encourage optimal pathfinding.
+  * -0.5 heavy collision penalty when contacting obstacles or walls.
 
 ---
 
@@ -35,14 +38,18 @@ The agent interacts with the environment using continuous vector observations an
 The training progress was tracked over **1,000,000 environment steps**. The telemetry graphs illustrate clear convergence and policy optimization:
 
 | Metric | Initial Value | Final Value | Interpretation |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **Cumulative Reward** | ~ -2.0 | **+0.92** | Continuous improvement in goal acquisition and collision avoidance. |
 | **Episode Length** | ~ 650 steps | **<55 steps** | Agent learned the shortest and fastest trajectory toward the goal. |
 | **Value / Policy Loss** | Unstable | **Stabilized** | PPO policy convergence without gradient explosion or mode collapse. |
 
 ### 📈 Convergence Graphs
 
+<img src="tb-1.png" alt="TensorBoard Reward">
+
 *Figure 1: Cumulative Reward trajectory reaching optimization threshold around 800k steps.*
+
+<img src="tb-2.png" alt="TensorBoard Episode Length">
 
 *Figure 2: Drastic reduction in episode length as optimal navigation strategy is mastered.*
 
@@ -51,7 +58,6 @@ The training progress was tracked over **1,000,000 environment steps**. The tele
 ## 🚀 How to Run & Inference
 
 ### 1. Requirements
-
 * Unity 2022.3 LTS or higher
 * Python 3.9+
 * Anaconda or venv virtual environment
@@ -59,7 +65,7 @@ The training progress was tracked over **1,000,000 environment steps**. The tele
 ### 2. Environment Setup
 
 ```bash
-git clone https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git
+git clone [https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git](https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git)
 cd Unity-ML-Agents-PPO
 pip install mlagents
 
@@ -145,7 +151,7 @@ El progreso del entrenamiento fue monitoreado durante **1,000,000 de pasos en el
 ### 2. Configuración del Entorno
 
 ```bash
-git clone https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git
+git clone [https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git](https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git)
 cd Unity-ML-Agents-PPO
 pip install mlagents
 
@@ -167,3 +173,7 @@ mlagents-learn config/OBS.yaml --run-id=PPO_Agent_Run_01
 * **Desarrollador:** Ivan Latrille Brito (ivan.latrille1@gmail.com)
 * **GitHub:** @MarketablePlushiee
 * **Portafolio:** marketableplushiee.github.io/Portafolio
+
+```
+
+```
