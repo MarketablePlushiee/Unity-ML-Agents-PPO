@@ -42,9 +42,7 @@ The training progress was tracked over **1,000,000 environment steps**. The tele
 
 ### 📈 Convergence Graphs
 
-
 *Figure 1: Cumulative Reward trajectory reaching optimization threshold around 800k steps.*
-
 
 *Figure 2: Drastic reduction in episode length as optimal navigation strategy is mastered.*
 
@@ -60,14 +58,21 @@ The training progress was tracked over **1,000,000 environment steps**. The tele
 
 ### 2. Environment Setup
 
+```bash
 git clone https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git
 cd Unity-ML-Agents-PPO
 pip install mlagents
 
+```
+
 ### 3. Training
 
 To start training the agent with the custom YAML configuration:
+
+```bash
 mlagents-learn config/OBS.yaml --run-id=PPO_Agent_Run_01
+
+```
 
 ---
 
@@ -123,9 +128,7 @@ El progreso del entrenamiento fue monitoreado durante **1,000,000 de pasos en el
 
 ### 📈 Gráficos de Convergencia
 
-
 *Figura 1: Trayectoria de recompensa acumulada alcanzando el umbral de optimización alrededor de los 800k pasos.*
-
 
 *Figura 2: Reducción drástica en la duración del episodio a medida que se domina la estrategia de navegación óptima.*
 
@@ -141,14 +144,21 @@ El progreso del entrenamiento fue monitoreado durante **1,000,000 de pasos en el
 
 ### 2. Configuración del Entorno
 
-git clone [https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git](https://www.google.com/search?q=https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git)
+```bash
+git clone https://github.com/MarketablePlushiee/Unity-ML-Agents-PPO.git
 cd Unity-ML-Agents-PPO
 pip install mlagents
+
+```
 
 ### 3. Entrenamiento
 
 Para iniciar el entrenamiento del agente con la configuración YAML personalizada:
+
+```bash
 mlagents-learn config/OBS.yaml --run-id=PPO_Agent_Run_01
+
+```
 
 ---
 
